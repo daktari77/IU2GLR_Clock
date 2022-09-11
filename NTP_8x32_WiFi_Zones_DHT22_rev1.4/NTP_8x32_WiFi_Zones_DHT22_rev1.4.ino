@@ -139,7 +139,7 @@ void loop()
   rotate = sec.toInt();
 
   //----------------------------------------------------Visualizzazione alternata Data / Temp&Umidità
-  if ((rotate >= 0) && (rotate <= 29)) {
+  if ((rotate >= 0) && (rotate <= 19) || (rotate >= 30) && (rotate <= 49)) { //se 0<=t<=19 o 30<=t<=49 visualizza info
     obtainInfo();
   }
   else {
